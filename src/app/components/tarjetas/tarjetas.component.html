@@ -1,0 +1,8 @@
+
+<div (click)="verArtista(artista)" class="card puntero">
+        <img class="card-img-top" [src]="artista.images | noimage" alt="Card image cap">
+        <div class="card-body">
+          <p class="card-text">{{artista.name}}</p>
+          <p class="card-text"><small class="text-muted">{{artista.release_date | date: y}}</small></p>
+        </div>
+</div>
